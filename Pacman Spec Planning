@@ -1,37 +1,37 @@
 Pacman Specification Planning
 
 Basic functions of:
-	Pacman
-        Movement (up, down, left, right)
-            Update future position (assuming some sort of update/tick in the main file)
-	    Current position
-		Eating dots
-            Dot goes away
-            Score added
-	    Eating fruit
-			Fruit goes away
+Pacman
+	Movement (up, down, left, right)
+		Update future position (assuming some sort of update/tick in the main file)
+	Current position
+	Eating dots
+		Dot goes away
+		Score added
+	Eating fruit
+		Fruit goes away
+		Score gets added
+		Ghosts turn blue
+		Pacman gains powerup
+		Powerup timer starts
+	Collision with wall (Or should Wall keep track of this?)
+		Pacman stops
+	Collision with ghost (Or should ghost keep track of this?)
+		Normal collision
+			Pacman dies
+		Pacman with powerup
+			Ghost dies
 			Score gets added
-			Ghosts turn blue
-			Pacman gains powerup
-			Powerup timer starts
-		Collision with wall (Or should Wall keep track of this?)
-			Pacman stops
-		Collision with ghost (Or should ghost keep track of this?)
-			Normal collision
-				Pacman dies
-			Pacman with powerup
-				Ghost dies
-				Score gets added
 
-	Wall
-		Maybe collision with pacman/ghost?
+Wall
+	Maybe collision with pacman/ghost?
 
-	Ghost
-		Whether Pacman has powerup
-			Ghost turns blue
-			Ghost runs away from Pacman
-		Running towards Pacman (normal behavior)
-		Running away from Pacman (when powerup active)
+Ghost
+	Whether Pacman has powerup
+		Ghost turns blue
+		Ghost runs away from Pacman
+	Running towards Pacman (normal behavior)
+	Running away from Pacman (when powerup active)
 
 * Need to make Java files with interfaces for Pacman, Ghost, and Wall
 * Java files need Javadoc style for comments
