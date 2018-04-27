@@ -5,7 +5,7 @@ Pacman
 	Movement (up, down, left, right)
 		Update future position (assuming some sort of update/tick in the main file)
 	/** Takes in images of Pacman */
- 	public void pacmanImage(pac img);
+ 	public void setImage(PImage img);
 
 	/** Returns the current position of Pacman */
 	@return the position of Pacman
