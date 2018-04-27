@@ -4,18 +4,37 @@ Basic functions of:
 Pacman
 	Movement (up, down, left, right)
 		Update future position (assuming some sort of update/tick in the main file)
-	Current position
+	/** Takes in images of Pacman */
+ 	public void pacmanImage(pac img);
+
+	/** Returns the current position of Pacman */
+	@return the position of Pacman
+	public int currentPosition();
+	
+	
 	Eating dots
 		Dot goes away
 		Score added
+	/** Updtes score and removes dots as Pacman eats them*/	
+	public void eatDots();
+	
 	Eating fruit
 		Fruit goes away
 		Score gets added
 		Ghosts turn blue
 		Pacman gains powerup
 		Powerup timer starts
+	/** Updates score, removes fruit from map, changes state of pacman, returns a powerup timer* 
+	public long eatFruit();
+
+	/** Changes state of pacman by alterning its color */
+	@param image of Pacman in powerup state
+	@param indication of what fruit pacman ate
+	public void powerupPac(PImage img, int fruit);
+
 	Collision with wall (Or should Wall keep track of this?)
 		Pacman stops
+	
 	Collision with ghost (Or should ghost keep track of this?)
 		Normal collision
 			Pacman dies
