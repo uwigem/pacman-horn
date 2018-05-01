@@ -17,10 +17,21 @@ Ghost
 	Main can ask ghost objects its location when it draws it
 	Ghost hold field about whether fruit power up is on
 •	If power up, do opposite of what it’s doing
-•	Fruit power up stored in main – T/F?
 o	Based on that change, future position accordingly
 Collision
-•	Handled by main, update appropriate variables w/ update function
+•	
 Score updated every frame
-Lives
-•	Stored in main
+
+
+Fruit
+  Fruit power up stored in main – T/F?
+  
+Pacman
+Walls
+Levels (main?)
+  Update function
+  Collision 
+    Update appropriate variables w/ update function
+  Score
+  Lives
+  
