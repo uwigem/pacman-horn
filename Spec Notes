@@ -1,0 +1,26 @@
+In main
+  o	Update function, every frame to redraw all
+o	Pacman future coordinates w/I frame
+	if cords coincide with wall
+•	Don’t update
+	If cords coincide with dot/fruit
+•	Pacman eats fruit/run function
+Dot
+•	Keeping track of what’s been eaten (on/off)
+	Boolean checker for each position
+	Each dot = entry in data structure contains T/F
+	Every update go through whole list (inefficient but will work)
+	Each dot object where and if it exists….
+	
+Ghost
+	Each ghost object stored as own field
+	Main can ask ghost objects its location when it draws it
+	Ghost hold field about whether fruit power up is on
+•	If power up, do opposite of what it’s doing
+•	Fruit power up stored in main – T/F?
+o	Based on that change, future position accordingly
+Collision
+•	Handled by main, update appropriate variables w/ update function
+Score updated every frame
+Lives
+•	Stored in main
